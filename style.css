@@ -1,12 +1,126 @@
 body {
 	  margin: 0;
+	 /* background-image: url("img/grafit.png");
+	  background-repeat: repeat; */
 }
+
+li {
+	margin-right: 20px;
+	padding-left: 30px;
+
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+
+
+
+#projects {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pmargin {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+
+.main{
+	height: 260px;
+	width: 100%;
+	background-image: url("img/fantasyTw.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	float: left;
+
+}
+
+#auth{
+	position: relative;
+	top: 30px;
+	left: 180px;
+	float: left;
+
+}
+
+#opis{
+	width: 50%;
+	height: 200px;
+	margin-top: 30px;
+	border: 2px solid #B856F5;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    float: left;
+}
+
+#atxt{
+	padding: 10px;
+
+}
+
+
+
+#navb{
+	width: 100%;
+	opacity: 0.9;
+	float: left;
+
+}
+
+.navbar{
+	height: 50px;
+
+}
+
+.navbar-text{
+	border-right: 1px solid silver;
+	padding-left: 100px;
+	padding-right: 50px;
+}
+
+
+#about{
+	width: 100%;
+	float: left;
+	display: none;
+
+}
+
+#travel{
+	width: 100%;
+	float: left;
+	display: none;
+}
+
+#projects{
+	width: 100%;
+	float: left;
+	display: none;
+}
+
+#recap{
+	width: 100%;
+	float: left;
+	padding-top: 30px;
+	border-top: 1px solid silver;
+
+}
+
+
+
+
 
 
 .box{
 	height: 200px;
 	text-align: center;
-	margin-left: 85px;
+	margin-left: 70px;
+	margin-top: 10px;
 	
 	
 
@@ -17,6 +131,7 @@ body {
 
 
 #left-box{
+	font-size: 16px;
 	
 
 }
@@ -24,7 +139,7 @@ body {
 
 #mid-box{
 	font-family: 'Tinos', serif;
-	font-size: 16px;
+	font-size: 18px;
 
 }
 

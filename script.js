@@ -1,3 +1,41 @@
+
+
+$(function() {
+
+	$("#omnie").on('click', function(){
+		$("#about").toggle(400);
+	});
+});
+
+
+$(function() {
+
+	$("#podroze").on('click', function(){
+		$("#travel").toggle(400);
+	});
+});
+
+$(function() {
+
+	$("#projekty").on('click', function(){
+		$("#projects").toggle(400);
+	});
+});
+
+
+
+
+
+$(function() {
+	$("#atxt").hide().show(2000);
+});
+
+$(function() {
+	$("#btxt").hide().show(3000);
+});
+
+
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
