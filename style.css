@@ -2,6 +2,7 @@ body {
 	  margin: 0;
 	 /* background-image: url("img/grafit.png");
 	  background-repeat: repeat; */
+
 }
 
 li {
@@ -59,10 +60,15 @@ h2, h3 {
 }
 
 #atxt{
-	padding: 10px;
+	padding: 5px;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 28px;
 
 }
 
+.nav{
+	text-align: center;
+	}
 
 
 #navb{
@@ -73,7 +79,7 @@ h2, h3 {
 }
 
 .navbar{
-	height: 50px;
+	
 
 }
 
@@ -96,6 +102,12 @@ h2, h3 {
 	float: left;
 	display: none;
 }
+
+.city{
+	display:none;
+}
+
+
 
 #projects{
 	width: 100%;

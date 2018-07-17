@@ -25,8 +25,7 @@
 <!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Tinos" rel="stylesheet">
 
 
 </head>
@@ -44,15 +43,18 @@
 				border: 1px solid silver;"> 
 		</div>
 		<div id="opis" class="col-xs-8">
-		<p id="atxt"> Witam na mojej stronie. <br><br>
-		..
-		<br><br>
-		..  jakiś cytat 
-		<br><br>
-		..
+		<p id="atxt">
+		<span style="font-size: 20px; font-family: normal;"> 'Hello World' on my website! </span>
+		 <br><br>
+		<span style="color: #A8004F; padding-left: 20px; "> ,,I want to put a ding in the universe". </span>
+		 <br> 
+		<span style="color: #00A859; padding-left: 30px; "> ,,We're just enthusiastic about what we do". </span>
+		 <br> 
+		<span style="font-size: 18px; float: right; padding-right: 200px;"> ~Steve Jobs </span>
 		</p>
-		<p id="btxt"> // w navbarze "single page", + inne odnośniki </p>
-
+		<!-- <p id="btxt"> .. w tym okienku będzie aktualna data. Obok okienka będzie przełącznik na "tryb nocny" zmiana css w jquerry.
+		Będą także znaczki do zmiany języka strony: ENG / RUS / FR </p>
+		-->
 		</div>
 
 	</div>
@@ -66,6 +68,7 @@
 	    		<li id="omnie"><a href="#"> O mnie </a></li>
 	    		<li id="podroze"><a href="#"> Podróże </a></li>
 	    		<li id="projekty"><a href="#"> Projekty </a></li>
+	    		<li> × </li>
 	    		<li><a href="#"> FR </a></li>
 	    		<li><a href="#"> Axis </a></li>
 	    		<li><a href="http://www.ilovebb.pl/" target="_blank"> ilovebb.pl </a></li>
@@ -78,32 +81,83 @@
 
 	<div id="about">
 		<div class="col-xs-2">
-			<img src="#">
-			<p> jakieś foto? </p>
+			<img src="img/saturn.jpg" style="width: 100%; height: 100%; margin: 20px; border-radius: 6px;">
 		</div>
 
 
-		<div class="col-xs-10">
-			<p> Nazywam się... </p>
-			<p> Jestem początkującym webmasterem, zapalonym na punkcie Raspberry Pi oraz Internetu Rzeczy IoT. <br>
-			Moim celem jest zostać testerem oprogramowania. Webmastering jest moim hobby, pierwsze strony pisałem kończąc 12 lat, gdy wpadła w moje ręce książka z HTML.
+		<div class="col-xs-9">
+			
+			<article style="padding: 20px;">
+			<h4>  Nazywam się... </h4>
+			<p style="font-size: 15px;"> Jestem początkującym webmasterem, zapalonym na punkcie IoT oraz domowej robotyki z Raspberry Pi.
+				<br> Uczę się programowania w skryptowym Pythonie, praktykując na 
+					<a href="https://projects.raspberrypi.org/en/" target="_blank"> malinkach </a>
+					i podczas pisania skryptów automatyzujących testowanie aplikacji webowych we framewerku Selenium Webdriver.
+				<br> Wraz z pracą na RPi wgłębiam się w platformę node.js, działającej na bazie silnika obsługującego JavaScript,
+				 V8 (autorstwa Google).
+				<br> 
+				<br> Front-end, webmastering jest moim drugim zajęciem, pierwsze strony tworzyłem kończąc 12 lat, gdy wpadła mi w ręce książka z HTML. 
+				<br> Nie mając jeszcze wtedy dostępu do internetu ani pojęcia o CSS i JS pisałem klasyczne z HTML 3.0, strony w Notatniku 😆.
+				<br> Obecnie moimi ulubionymi IDE są PyCharm i Sublime Text 3. Korzystam także z Atom.io, gdy w realizacji mam więcej projektów.
+				<br> Jestem otwarty na wszelkie propozycje testerskie i związane z tym oferty pracy. Testowanie oprogramowania jak uważam jest ścieżką w karierze IT dla mnie najbardziej przystępną. Możliwa relokacja na terenie UE nie jest dla mnie przeszkodą, lubię się przemieszczać z miejsca na miejsce.
+				<br>
+				Jako student WSEH w Bielsku-Białej uczę się zarządzać projektami. Logistyczne podejście, sprawna komunikacja i pozytywne nastawienie jest niemniej ważne dla przemysłu IT jak najnowsze technologie.
 			</p>
-			<p>
-			Jako student WSEH w Bielsku-Białej uczę się zarządzać projektami. 
-			WIĘCEJ TEKSTU ITD...
-			</p>
+			</article>
+
 		</div>
 
+		<div class="col-xs-1">
+			<br><br>
+			<img src="img/RPi-Logo-SCREEN.png" style="width: 35%; height: 35%;">
+			<br><br>
+			<img src="https://www.python.org/static/community_logos/python-logo-inkscape.svg" style="width: 100%; height: 100%;">
+			<br><br>
+			<img src="img/node-js.png" style="width: 90%; height: 90%;">
+			<br>
+			<im src="" >
+		</div>
 
 	</div>
 
 
 	<div id="travel">
-		<div class="col-xs-4">
-		<p> Quisque dictum eros vel mauris venenatis, nec sollicitudin lectus semper. Nam faucibus tincidunt tempor. Aliquam erat volutpat. Mauris venenatis, tellus in ultricies elementum, mi neque accumsan ipsum, vel consequat ante risus vel tortor. Aliquam nibh arcu, aliquam nec est id, aliquet accumsan sem. </p>
+		<div class="col-xs-6">
+		<article style="text-align: center;">
+		<h3> Pierwsza <i> kosmiczna </i> podróż </h3>
+		<p> Sekcja w budowie, zostawiam więc na kosmiczną podróż, kosmiczny teledysk &nbsp <span class="glyphicon glyphicon-hand-right"></span> </p>
+		<!-- Tu będzie raczej <ol> <li> (albo i nie), display: nonce; ETC... -->
+		<h3> Portugalia </h3>
+		<p> </p>
+		<h3> Holandia </h3>
+		<p> </p>
+		<h3> Francja </h3>
+		<h4 class="city"> Paryż </h4>
+		<p> </p>
+		<h4 class="city"> Lyon </h4>
+		<p> </p>
+		<h4 class="city"> Marsylia </h4>
+		<p> </p>
+		<h4 class="city"> Annecy </h4>
+		<p> </p>
+		<h3> Cypr </h3>
+		<h4 class="city"> Nikozja </h4>
+		<p> </p>
+		<h4 class="city"> Limassol </h4>
+		<p> </p>
+		<h4 class="city"> Pafos </h4>
+		<p> </p>		
+		<h3> Kurdystan, Iran</h3>
+		<h4 class="city"> Sanandaj </h4>
+		<p> </p>
+		</article>
 		</div>
-		<div class="col-xs-8">
-		<p> Quisque dictum eros vel mauris venenatis, nec sollicitudin lectus semper. Nam faucibus tincidunt tempor. Aliquam erat volutpat. Mauris venenatis, tellus in ultricies elementum, mi neque accumsan ipsum, vel consequat ante risus vel tortor. Aliquam nibh arcu, aliquam nec est id, aliquet accumsan sem. </p>
+		<div class="col-xs-6">
+		<p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Yce0wDdu2go?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- 
+		 <iframe width="560" height="315" src="https://www.youtube.com/embed/RgWIeWQoyuI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </p>
+-->
 		</div>
 
 	</div>
@@ -112,9 +166,9 @@
 	<div id="projects">
 		<h2> O projektach </h2>
 		<div class="col-xs-3">
-			<h3> FR </h3>
+			<h3> fr-avec.pl </h3>
 			<img src="img/stamp.jpg" style="height:200px; width: 150px; display: block; margin-left: auto; margin-right: auto;">
-				<p class="pmargin"> Baza słówek francuskich, zaczerpniętych z artykułów gazet i tekstów piosenek. Swoisty sposób nauki języka poprzez tłumaczenie i dodanie nowych słówek na stronę. 
+				<p class="pmargin"> Baza słówek francuskich, zaczerpniętych z artykułów francuskich gazet i tekstów piosenek. Prosty sposób nauki języka obcego poprzez tłumaczenie i dodanie nowych słówek na stronę. Nauka wielowymiarowa.
 				</p>
 		</div>
 
@@ -126,7 +180,7 @@
 		</div>
 
 		<div class="col-xs-3">
-			<h3> BB </h3>
+			<h3> bielsko-trip.eu </h3>
 			<img src="img/BB_logo.jpg" style="height:200px; width: 260px; display: block; margin-left: auto; margin-right: auto;">
 				<p class="pmargin"> Quisque dictum eros vel mauris venenatis, nec sollicitudin lectus semper. Nam faucibus tincidunt tempor. Aliquam erat volutpat. Mauris venenatis, tellus in ultricies elementum, mi neque accumsan ipsum, vel consequat ante risus vel tortor.
 				</p>
@@ -137,6 +191,7 @@
 			<img src="img/pacman.png" style="height: 100px; width: 200px; margin-top: 50px; margin-bottom: 80px; display: block; margin-left: auto; margin-right: auto;">
 				<p class="pmargin"> Projekt, którego stopniowo wykonuję.
 				Jest to tutorial z książki Jeffreya Bilesa.
+				Narazie to tylko commity i modyfikacje. Wypuszczę pac-mana z klatki, gdy osiągnie godny pułap rozwoju ;)
 				</p>
 		</div>
 
@@ -159,9 +214,13 @@
 				opacity: 0.5;">
 			-->
 			<h4> Strony partnerskie </h4>
-			<p> something </p>
-			<p> something </p>
-			<p> something </p>
+			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
+			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
+			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
+			<br>
+			<h4> Kontakt </h4>
+			<p> <span class="glyphicon glyphicon-envelope"></span> &nbsp ig3dev@linux.pl  </p>
+        
 		</div>
 
 		<div class="box col-xs-3" id="mid-box">
