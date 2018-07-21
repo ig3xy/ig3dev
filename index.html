@@ -12,6 +12,21 @@
 	<script src="js/three.min.js"></script>
 	<script src="js/stats.min.js"></script>
 
+
+	<script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
+
+	<script>
+		CookieAlert.init({
+			style: 'dark',
+			position: 'bottom',
+			opacity: '0.8',
+			displayTime: 0,
+			cookiePolicy: 'http://cookiealert.sruu.pl/o-ciasteczkach',
+			text: 'Ta strona wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
+		});
+	</script>
+
+
 	
 
 
@@ -28,8 +43,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Tinos" rel="stylesheet">
 
 
+
 </head>
 <body>
+
+
+
+
+
+
 <script src="script.js"></script>
 
 <div id="container">
@@ -45,7 +67,7 @@
 		<div id="opis" class="col-xs-8">
 		<p id="atxt">
 		<span style="font-size: 20px; font-family: normal;"> 'Hello World' on my website! </span>
-		 <br><br>
+		 <br>
 		<span style="color: #A8004F; padding-left: 20px; "> ,,I want to put a ding in the universe". </span>
 		 <br> 
 		<span style="color: #00A859; padding-left: 30px; "> ,,We're just enthusiastic about what we do". </span>
@@ -64,13 +86,13 @@
 	<div id="navb">
 		<nav class="navbar navbar-inverse">
 			 <ul class="nav navbar-nav">
-			 	<p class="navbar-text"><a href="ig3dev.pl" style="text-decoration: none;"><strong> ig3dev.pl </strong></a></p>
+			 	<p class="navbar-text"><a href="#" style="text-decoration: none;"><strong> ig3dev.pl </strong></a></p>
 	    		<li id="omnie"><a href="#"> O mnie </a></li>
 	    		<li id="podroze"><a href="#"> Podróże </a></li>
 	    		<li id="projekty"><a href="#"> Projekty </a></li>
 	    		<li> × </li>
-	    		<li><a href="#"> FR </a></li>
-	    		<li><a href="#"> Axis </a></li>
+	    		<li><a href="http://www.fr-avec.pl" target="_blank"> fr-avec.pl </a></li>
+	    		<li><a href="#">  </a></li>
 	    		<li><a href="http://www.ilovebb.pl/" target="_blank"> ilovebb.pl </a></li>
 	    		<p class="navbar-text"> <a href="http://www.zory.pl/" target="_blank"> <img src="img/zory.png" style="width: 25%; height: 25%;">  </a> </p>
 	  		</ul>
@@ -80,6 +102,7 @@
 
 
 	<div id="about">
+	<div class="row">
 		<div class="col-xs-2">
 			<img src="img/saturn.jpg" style="width: 100%; height: 100%; margin: 20px; border-radius: 6px;">
 		</div>
@@ -96,10 +119,11 @@
 				<br> Wraz z pracą na RPi wgłębiam się w platformę node.js, działającej na bazie silnika obsługującego JavaScript,
 				 V8 (autorstwa Google).
 				<br> 
-				<br> Front-end, webmastering jest moim drugim zajęciem, pierwsze strony tworzyłem kończąc 12 lat, gdy wpadła mi w ręce książka z HTML. 
-				<br> Nie mając jeszcze wtedy dostępu do internetu ani pojęcia o CSS i JS pisałem klasyczne z HTML 3.0, strony w Notatniku 😆.
-				<br> Obecnie moimi ulubionymi IDE są PyCharm i Sublime Text 3. Korzystam także z Atom.io, gdy w realizacji mam więcej projektów.
-				<br> Jestem otwarty na wszelkie propozycje testerskie i związane z tym oferty pracy. Testowanie oprogramowania jak uważam jest ścieżką w karierze IT dla mnie najbardziej przystępną. Możliwa relokacja na terenie UE nie jest dla mnie przeszkodą, lubię się przemieszczać z miejsca na miejsce.
+				<br> Front-end, webmastering jest moim drugim zajęciem, bez korzystania z gotowych CMS'ów tylko własne rzemiosło.
+				<br> Pierwsze strony tworzyłem kończąc 12 lat, gdy wpadła mi w ręce książka z HTML. 
+				Nie mając jeszcze wtedy dostępu do internetu ani pojęcia o CSS i JS pisałem klasyczne z HTML 3.0, strony w Notatniku 😆.
+				<br> Obecnie moimi ulubionymi IDE są PyCharm i Sublime Text 3. Korzystam także z Atom.io, gdy w realizacji jest więcej projektów.
+				<br> Jestem otwarty na wszelkie propozycje testerskie, developerskie i związane z tym oferty pracy. Testowanie oprogramowania jak uważam jest ścieżką w karierze IT dla mnie najbardziej przystępną. Możliwa relokacja na terenie kraju nie jest dla mnie przeszkodą, lubię się przemieszczać z miejsca na miejsce.
 				<br>
 				Jako student WSEH w Bielsku-Białej uczę się zarządzać projektami. Logistyczne podejście, sprawna komunikacja i pozytywne nastawienie jest niemniej ważne dla przemysłu IT jak najnowsze technologie.
 			</p>
@@ -115,74 +139,87 @@
 			<br><br>
 			<img src="img/node-js.png" style="width: 90%; height: 90%;">
 			<br>
-			<im src="" >
+			<!-- <img src="" > -->
 		</div>
 
+	</div>
 	</div>
 
 
 	<div id="travel">
+	<div class="row">
 		<div class="col-xs-6">
 		<article style="text-align: center;">
-		<h3> Pierwsza <i> kosmiczna </i> podróż </h3>
-		<p> Sekcja w budowie, zostawiam więc na kosmiczną podróż, kosmiczny teledysk &nbsp <span class="glyphicon glyphicon-hand-right"></span> </p>
-		<!-- Tu będzie raczej <ol> <li> (albo i nie), display: nonce; ETC... -->
-		<h3> Portugalia </h3>
-		<p> </p>
-		<h3> Holandia </h3>
-		<p> </p>
-		<h3> Francja </h3>
-		<h4 class="city"> Paryż </h4>
-		<p> </p>
-		<h4 class="city"> Lyon </h4>
-		<p> </p>
-		<h4 class="city"> Marsylia </h4>
-		<p> </p>
-		<h4 class="city"> Annecy </h4>
-		<p> </p>
-		<h3> Cypr </h3>
-		<h4 class="city"> Nikozja </h4>
-		<p> </p>
-		<h4 class="city"> Limassol </h4>
-		<p> </p>
-		<h4 class="city"> Pafos </h4>
-		<p> </p>		
-		<h3> Kurdystan, Iran</h3>
-		<h4 class="city"> Sanandaj </h4>
-		<p> </p>
+			<h3><i> Pierwsza kosmiczna podróż </i></h3>
+				<p style="font-size: 16px;"> Sekcja w budowie.</p>
+				<br>
+
+				<img src="img/constr.png"
+					style="
+						height: 40%;
+						width: 40%;
+						opacity:0.9;">
+
+				<br><br><br>
+				<p> Na kosmiczną podróż, zostawiam więc kosmiczny teledysk &nbsp 
+					<span class="glyphicon glyphicon-hand-right"></span> </p>
+			
+			<h3 style="display:none;"> Portugalia </h3>
+				<p> </p>
+			<h3 style="display:none;"> Holandia </h3>
+				<p> </p>
+			<h3 style="display:none;"> Francja </h3>
+				<h4 class="city"> Paryż </h4>
+				<p> </p>
+				<h4 class="city"> Lyon </h4>
+				<p> </p>
+				<h4 class="city"> Marsylia </h4>
+				<p> </p>
+				<h4 class="city"> Annecy </h4>
+				<p> </p>
+			<h3 style="display:none;"> Cypr </h3>
+				<h4 class="city"> Nikozja </h4>
+				<p> </p>
+				<h4 class="city"> Limassol </h4>
+				<p> </p>
+				<h4 class="city"> Pafos </h4>
+				<p> </p>		
+			<h3 style="display:none;"> Kurdystan, Iran </h3>
+				<h4 class="city"> Sanandaj </h4>
+				<p> </p>
 		</article>
 		</div>
 		<div class="col-xs-6">
 		<p>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/Yce0wDdu2go?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<!-- 
-		 <iframe width="560" height="315" src="https://www.youtube.com/embed/RgWIeWQoyuI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </p>
--->
+		</p>
 		</div>
 
+	</div>
 	</div>
 
 
 	<div id="projects">
+	<div class="row">
 		<h2> O projektach </h2>
 		<div class="col-xs-3">
-			<h3> fr-avec.pl </h3>
+			 <h3> <a href="http://wwww.fr-avec.pl" style="text-decoration: none;" target="_blank"> fr-avec.pl </a> </h3> 
 			<img src="img/stamp.jpg" style="height:200px; width: 150px; display: block; margin-left: auto; margin-right: auto;">
 				<p class="pmargin"> Baza słówek francuskich, zaczerpniętych z artykułów francuskich gazet i tekstów piosenek. Prosty sposób nauki języka obcego poprzez tłumaczenie i dodanie nowych słówek na stronę. Nauka wielowymiarowa.
 				</p>
 		</div>
 
 		<div class="col-xs-3">
-		<h3> Axis </h3>
-		<img src="img/axis.png" style="height:200px; width: 200px; display: block; margin-left: auto; margin-right: auto;">
-			<p class="pmargin"> Galeria fotografii autorstwa Asi Przepióry o tematyce konnej.
+		<h3> Galeria fotografii </h3>
+		<img src="img/axiss.png" style="height:200px; width: 200px; display: block; margin-left: auto; margin-right: auto;">
+			<p class="pmargin"> Galeria fotografii. /w budowie
 			</p>
 		</div>
 
 		<div class="col-xs-3">
 			<h3> bielsko-trip.eu </h3>
 			<img src="img/BB_logo.jpg" style="height:200px; width: 260px; display: block; margin-left: auto; margin-right: auto;">
-				<p class="pmargin"> Quisque dictum eros vel mauris venenatis, nec sollicitudin lectus semper. Nam faucibus tincidunt tempor. Aliquam erat volutpat. Mauris venenatis, tellus in ultricies elementum, mi neque accumsan ipsum, vel consequat ante risus vel tortor.
+				<p class="pmargin"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget interdum urna. Duis convallis orci dolor, sed convallis elit euismod ac. Vestibulum maximus urna ut felis vestibulum, porta rutrum nunc facilisis. Suspendisse ornare elementum risus, ac facilisis libero faucibus ut.
 				</p>
 		</div>
 
@@ -191,10 +228,10 @@
 			<img src="img/pacman.png" style="height: 100px; width: 200px; margin-top: 50px; margin-bottom: 80px; display: block; margin-left: auto; margin-right: auto;">
 				<p class="pmargin"> Projekt, którego stopniowo wykonuję.
 				Jest to tutorial z książki Jeffreya Bilesa.
-				Narazie to tylko commity i modyfikacje. Wypuszczę pac-mana z klatki, gdy osiągnie godny pułap rozwoju ;)
+				Narazie to tylko commity i modyfikacje. Wypuszczę pac-mana z klatki, gdy osiągnie godny pułap rozwoju.
 				</p>
 		</div>
-
+	</div>
 	</div>
 
 
@@ -202,17 +239,9 @@
 
 
 	<div id="recap">
+	<div class="row">
 		<div class="box col-xs-3" id="left-box">
-			<!-- <img src="https://cdn.pixabay.com/photo/2017/10/26/17/51/under-construction-2891888_640.jpg" 
-				style="
-				position: absolute;
-	   			border: 3px solid #73AD21;
-	   			width: 85%;
-	   			height: 90%;
-	   			left: 30px;
-				top: 50px;
-				opacity: 0.5;">
-			-->
+			
 			<h4> Strony partnerskie </h4>
 			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
 			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
@@ -233,23 +262,32 @@
 				<img src="img/GitHub-Mark-64px.png" style="height: 40px; width:40px;">
 			</a>
 			<br> <br>
-			<span class="btc" >
-				<img src="img/WeLv_BC_Badge_128px.png" id="myBtn">
-			</span>
+<!-- DONATE -->
+			<div class="dropdown">
+				<span class="btc" >
+					<img src="img/WeLv_BC_Badge_128px.png" id="myBtn">
+				</span>
+				<div class="dropdown-content">
+					<img src="img/btc-transfer.png" style="height: 100%; width: 100%;">
+					<div class="desc"> BTC - donate adress </div>
+				</div>
+			</div>
+<!-- END OF DONATE -->
+
 		</div>
 
 		<div class="box col-xs-3" id="right-box">		
-			<img src="img/snap.jpg" style="height:250px; width: 250px; border: 3px solid #6E6E6E;">
+			<img src="img/snapx.jpg" style="height:250px; width: 250px; border: 3px solid #6E6E6E;">
 		</div>
+	</div>
 	</div>
 <!-- height:200px; width: 150px; margin-top: 5px -->
 
 	<!-- 
 		<script src="js/webgl_geometry_hierarchy.js"></script> 
 	-->
-	
-</div>
 
+</div>
 
 </body>
 </html>
