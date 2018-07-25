@@ -2,9 +2,13 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8"/>
-	<title> New junior dev - young passionate to testing and webmastering </title>
-	<meta name="description" content="tester"/>
-	<meta name="keywords" content="tester"/>
+
+	<title> New junior dev </title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="young passionate to testing and webmastering"/>
+	<meta name="keywords" content="web, dev, tester, qa, junior"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
 	<link rel="stylesheet" href="style.css" type="text/css"/>
@@ -46,34 +50,30 @@
 
 </head>
 <body>
-
-
-
-
-
-
 <script src="script.js"></script>
 
-<div id="container">
 
-	<div class="main col-xs-12">
-		<div id="auth" class="col-xs-4">
+
+		<div class="main col-sm-12">
+		<div id="auth" class="col-sm-4">
 			<img src="img/t-bitmoji.png" 
 				style="
 				width: 48%; 
 				height: 48%;
 				border: 1px solid silver;"> 
 		</div>
-		<div id="opis" class="col-xs-8">
-		<p id="atxt">
-		<span style="font-size: 20px; font-family: normal;"> 'Hello World' on my website! </span>
+		<div id="opis" class="col-sm-8">
+		<article id="atxt">
+		<p>
+		<span style="font-size: 1.6vw; font-family: normal;"> 'Hello World' on my website! </span>
 		 <br>
-		<span style="color: #A8004F; padding-left: 20px; "> ,,I want to put a ding in the universe". </span>
+		<span style="color: #A8004F; font-size: 2.3vw; padding-left: 20px; "> ,,I want to put a ding in the universe". </span>
 		 <br> 
-		<span style="color: #00A859; padding-left: 30px; "> ,,We're just enthusiastic about what we do". </span>
+		<span style="color: #00A859; font-size: 2.3vw; padding-left: 30px; "> ,,We're just enthusiastic about what we do". </span>
 		 <br> 
-		<span style="font-size: 18px; float: right; padding-right: 200px;"> ~Steve Jobs </span>
+		<span style="font-size: 1.5vw; float: right; padding-right: 200px;"> ~Steve Jobs </span>
 		</p>
+		</article>
 		<!-- <p id="btxt"> .. w tym okienku będzie aktualna data. Obok okienka będzie przełącznik na "tryb nocny" zmiana css w jquerry.
 		Będą także znaczki do zmiany języka strony: ENG / RUS / FR </p>
 		-->
@@ -81,45 +81,59 @@
 
 	</div>
 
-
-
+	<!-- navbar do zmiany -->
 	<div id="navb">
 		<nav class="navbar navbar-inverse">
-			 <ul class="nav navbar-nav">
-			 	<p class="navbar-text"><a href="#" style="text-decoration: none;"><strong> ig3dev.pl </strong></a></p>
-	    		<li id="omnie"><a href="#"> O mnie </a></li>
-	    		<li id="podroze"><a href="#"> Podróże </a></li>
-	    		<li id="projekty"><a href="#"> Projekty </a></li>
-	    		<li> × </li>
-	    		<li><a href="http://www.fr-avec.pl" target="_blank"> fr-avec.pl </a></li>
-	    		<li><a href="#">  </a></li>
-	    		<li><a href="http://www.ilovebb.pl/" target="_blank"> ilovebb.pl </a></li>
-	    		<p class="navbar-text"> <a href="http://www.zory.pl/" target="_blank"> <img src="img/zory.png" style="width: 25%; height: 25%;">  </a> </p>
-	  		</ul>
+			<ul class="nav navbar-nav">
 
+			 	<p class="navbar-text"><a href="http://www.ig3dev.pl" style="text-decoration: none;">
+			 	<span class="glyphicon glyphicon-home"></span> &nbsp
+			 	<strong> ig3dev.pl </strong></a></p>
+
+	    		<li id="omnie"><a href="#"> 
+	    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp O mnie </a></li>
+
+	    		<li id="podroze"><a href="#"> 
+	    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp Podróże </a></li>
+	    		
+	    		<li id="projekty"><a href="#">
+	    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp  Projekty </a></li>
+	    		
+	    		<li> × </li>
+	    		<li> × </li>
+	    		<li> × </li>
+
+	    		<li id="fr"><a href="http://www.fr-avec.pl" target="_blank"> fr-avec.pl </a></li>
+
+	    <!-- 	<li><a href="http://www.ilovebb.pl/" target="_blank"> ilovebb.pl </a></li>
+	    -->		
+	    		<p class="navbar-text"> &nbsp &nbsp I'm from: &nbsp <a href="http://www.zory.pl/" target="_blank"> <img src="img/zory.png" width="22" height="22">  </a> &nbsp </p>
+
+	  		</ul>
 		</nav>
 	</div>
+	
 
 
 	<div id="about">
 	<div class="row">
-		<div class="col-xs-2">
+		<div class="col-sm-2">
 			<img src="img/saturn.jpg" style="width: 100%; height: 100%; margin: 20px; border-radius: 6px;">
 		</div>
 
 
-		<div class="col-xs-9">
+		<div class="col-sm-9">
 			
 			<article style="padding: 20px;">
 			<h4>  Nazywam się... </h4>
 			<p style="font-size: 15px;"> Jestem początkującym webmasterem, zapalonym na punkcie IoT oraz domowej robotyki z Raspberry Pi.
 				<br> Uczę się programowania w skryptowym Pythonie, praktykując na 
-					<a href="https://projects.raspberrypi.org/en/" target="_blank"> malinkach </a>
-					i podczas pisania skryptów automatyzujących testowanie aplikacji webowych we framewerku Selenium Webdriver.
+					<a href="https://projects.raspberrypi.org/en/" target="_blank">malinkach</a>
+					i podczas pisania skryptów automatyzujących testowanie aplikacji webowych we frameworku Selenium Webdriver.
 				<br> Wraz z pracą na RPi wgłębiam się w platformę node.js, działającej na bazie silnika obsługującego JavaScript,
 				 V8 (autorstwa Google).
 				<br> 
-				<br> Front-end, webmastering jest moim drugim zajęciem, bez korzystania z gotowych CMS'ów tylko własne rzemiosło.
+				<br> Front-end, webmastering jest moim drugim zajęciem, bez korzystania z gotowych CMS'ów, tylko własne rzemiosło.
 				<br> Pierwsze strony tworzyłem kończąc 12 lat, gdy wpadła mi w ręce książka z HTML. 
 				Nie mając jeszcze wtedy dostępu do internetu ani pojęcia o CSS i JS pisałem klasyczne z HTML 3.0, strony w Notatniku 😆.
 				<br> Obecnie moimi ulubionymi IDE są PyCharm i Sublime Text 3. Korzystam także z Atom.io, gdy w realizacji jest więcej projektów.
@@ -131,7 +145,7 @@
 
 		</div>
 
-		<div class="col-xs-1">
+		<div class="col-sm-1">
 			<br><br>
 			<img src="img/RPi-Logo-SCREEN.png" style="width: 35%; height: 35%;">
 			<br><br>
@@ -148,7 +162,7 @@
 
 	<div id="travel">
 	<div class="row">
-		<div class="col-xs-6">
+		<div class="col-sm-6">
 		<article style="text-align: center;">
 			<h3><i> Pierwsza kosmiczna podróż </i></h3>
 				<p style="font-size: 16px;"> Sekcja w budowie.</p>
@@ -189,7 +203,7 @@
 				<p> </p>
 		</article>
 		</div>
-		<div class="col-xs-6">
+		<div class="col-sm-6">
 		<p>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/Yce0wDdu2go?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</p>
@@ -200,30 +214,34 @@
 
 
 	<div id="projects">
+	
 	<div class="row">
+		<div class="col-sm-12">
 		<h2> O projektach </h2>
-		<div class="col-xs-3">
+		</div>
+		
+		<div class="col-sm-3">
 			 <h3> <a href="http://wwww.fr-avec.pl" style="text-decoration: none;" target="_blank"> fr-avec.pl </a> </h3> 
 			<img src="img/stamp.jpg" style="height:200px; width: 150px; display: block; margin-left: auto; margin-right: auto;">
 				<p class="pmargin"> Baza słówek francuskich, zaczerpniętych z artykułów francuskich gazet i tekstów piosenek. Prosty sposób nauki języka obcego poprzez tłumaczenie i dodanie nowych słówek na stronę. Nauka wielowymiarowa.
 				</p>
 		</div>
 
-		<div class="col-xs-3">
+		<div class="col-sm-3">
 		<h3> Galeria fotografii </h3>
 		<img src="img/axiss.png" style="height:200px; width: 200px; display: block; margin-left: auto; margin-right: auto;">
 			<p class="pmargin"> Galeria fotografii. /w budowie
 			</p>
 		</div>
 
-		<div class="col-xs-3">
+		<div class="col-sm-3">
 			<h3> bielsko-trip.eu </h3>
 			<img src="img/BB_logo.jpg" style="height:200px; width: 260px; display: block; margin-left: auto; margin-right: auto;">
 				<p class="pmargin"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget interdum urna. Duis convallis orci dolor, sed convallis elit euismod ac. Vestibulum maximus urna ut felis vestibulum, porta rutrum nunc facilisis. Suspendisse ornare elementum risus, ac facilisis libero faucibus ut.
 				</p>
 		</div>
 
-		<div class="col-xs-3">
+		<div class="col-sm-3">
 			<h3> pac-man </h3>
 			<img src="img/pacman.png" style="height: 100px; width: 200px; margin-top: 50px; margin-bottom: 80px; display: block; margin-left: auto; margin-right: auto;">
 				<p class="pmargin"> Projekt, którego stopniowo wykonuję.
@@ -240,19 +258,21 @@
 
 	<div id="recap">
 	<div class="row">
-		<div class="box col-xs-3" id="left-box">
-			
+		<div class="box col-sm-5" id="left-box">
+
+		
 			<h4> Strony partnerskie </h4>
 			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
 			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
 			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
 			<br>
 			<h4> Kontakt </h4>
-			<p> <span class="glyphicon glyphicon-envelope"></span> &nbsp ig3dev@linux.pl  </p>
-        
+			<p> <span class="glyphicon glyphicon-envelope"></span> &nbsp ig3dev@linux.pl</p>
+     	
+
 		</div>
 
-		<div class="box col-xs-3" id="mid-box">
+		<div class="box col-sm-2" id="mid-box">
 			<p style="padding-bottom: 10px;"> support &nbsp IT &nbsp freelance </p>
 
 			<a href="https://www.instagram.com/igrekp/" target="_blank">
@@ -276,18 +296,20 @@
 
 		</div>
 
-		<div class="box col-xs-3" id="right-box">		
-			<img src="img/snapx.jpg" style="height:250px; width: 250px; border: 3px solid #6E6E6E;">
+		<div class="box col-sm-5" id="right-box">
+						
+				<img src="img/snapx.jpg" style="height: 200px; width: 200px; border: 3px solid #6E6E6E; margin-top: 30px;">
+			
 		</div>
 	</div>
 	</div>
-<!-- height:200px; width: 150px; margin-top: 5px -->
+<!-- height:200px; width: 250px; margin-top: 5px -->
 
 	<!-- 
 		<script src="js/webgl_geometry_hierarchy.js"></script> 
 	-->
 
-</div>
+
 
 </body>
 </html>

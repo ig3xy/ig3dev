@@ -1,15 +1,29 @@
 body {
-	  margin: 0;
+	margin: 0;
 	 /* background-image: url("img/grafit.png");
 	  background-repeat: repeat; */
+	  
+	overflow-x: hidden;
+
 
 }
 
-li {
+
+
+li{
 	margin-right: 20px;
 	padding-left: 30px;
-
+	color: purple;
 }
+
+#fr > a{
+	color: #FF14F7;
+}
+
+#fr:hover > a {
+	color: #FF1462;
+}
+
 
 h2, h3 {
 	text-align: center;
@@ -18,13 +32,12 @@ h2, h3 {
 
 #projects {
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .pmargin {
 	margin-top: 20px;
 	margin-bottom: 30px;
+	padding: 10px;
 }
 
 
@@ -47,8 +60,8 @@ h2, h3 {
 }
 
 #opis{
-	width: 50%;
-	height: 200px;
+	max-width: 50%;
+	min-height: 77%;
 	margin-top: 30px;
 	border: 2px solid #B856F5;
     background-color: #ffffff;
@@ -60,7 +73,6 @@ h2, h3 {
 #atxt{
 	padding: 5px;
 	font-family: 'Shadows Into Light', cursive;
-	font-size: 28px;
 
 }
 
@@ -78,13 +90,14 @@ h2, h3 {
 
 .navbar{
 	
-
 }
 
+
 .navbar-text{
+	border-left: 1px solid silver;
 	border-right: 1px solid silver;
-	padding-left: 100px;
-	padding-right: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 
@@ -92,13 +105,19 @@ h2, h3 {
 	width: 100%;
 	float: left;
 	display: none;
+	border-bottom: 1px solid silver;
+
 
 }
 
 #travel{
+	margin-top: 20px;
 	width: 100%;
 	float: left;
 	display: none;
+	border-bottom: 1px solid silver;
+
+
 }
 
 .city{
@@ -111,6 +130,8 @@ h2, h3 {
 	width: 100%;
 	float: left;
 	display: none;
+	border-bottom: 1px solid silver;
+
 }
 
 #recap{
@@ -118,6 +139,8 @@ h2, h3 {
 	float: left;
 	padding-top: 30px;
 	border-top: 1px solid silver;
+	
+
 
 }
 
@@ -127,23 +150,14 @@ h2, h3 {
 
 
 .box{
-	height: 200px;
+	height: 230px;
 	text-align: center;
-	margin-left: 70px;
 	margin-top: 10px;
-	
-	
-
 }
-
-
-
 
 
 #left-box{
 	font-size: 16px;
-	
-
 }
 
 
@@ -155,10 +169,7 @@ h2, h3 {
 
 
 #right-box{
-	
-
-
-
+	padding-bottom: 10px;
 }
 
 .btc{
