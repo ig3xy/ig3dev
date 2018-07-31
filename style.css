@@ -2,11 +2,11 @@ body {
 	margin: 0;
 	 /* background-image: url("img/grafit.png");
 	  background-repeat: repeat; */
-	  
 	overflow-x: hidden;
 
-
 }
+
+
 
 
 
@@ -16,28 +16,8 @@ li{
 	color: purple;
 }
 
-#fr > a{
-	color: #FF14F7;
-}
-
-#fr:hover > a {
-	color: #FF1462;
-}
-
-
-h2, h3 {
-	text-align: center;
-}
-
-
-#projects {
-	display: block;
-}
-
-.pmargin {
-	margin-top: 20px;
-	margin-bottom: 30px;
-	padding: 10px;
+img{
+	z-index: -1;
 }
 
 
@@ -54,14 +34,14 @@ h2, h3 {
 #auth{
 	position: relative;
 	top: 30px;
-	left: 180px;
+	left: 140px;
 	float: left;
 
 }
 
 #opis{
 	max-width: 50%;
-	min-height: 77%;
+	min-height: 76%;
 	margin-top: 30px;
 	border: 2px solid #B856F5;
     background-color: #ffffff;
@@ -76,47 +56,116 @@ h2, h3 {
 
 }
 
-.nav{
-	text-align: center;
-	}
 
 
-#navb{
-	width: 100%;
-	opacity: 0.9;
-	float: left;
+
+
+
+.sticky{
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 
 }
 
-.navbar{
+
+#omnie:hover, #podroze:hover, #projekty:hover > a {
+	text-shadow: 1px 1px 2px white;
 	
 }
 
 
+
+#fr > a{
+	color: #FF14F7;
+}
+
+#fr:hover > a {
+	color: #FF1462;
+	text-shadow: 1px 1px 2px red;
+	font-size: 16px;
+}
+
+#bt > a{
+	color: #54D2E3;
+}
+
+#bt:hover > a{
+	color: #FF1462;
+	text-shadow: 1px 1px 2px red;
+	font-size: 16px;
+}
+
+
+
+
+#navb{
+	width: 100%;
+	opacity: 0.95;
+	z-index: 1;
+	float: left;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar-brand{
+	margin-right: 30px;
+}
+
+
+.navbar{
+	font-size: 17px;
+	
+}
+
+.navbar-header{
+	padding-left: 30px;
+}
+
 .navbar-text{
 	border-left: 1px solid silver;
 	border-right: 1px solid silver;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
+
+
+
+
+h2, h3 {
+	text-align: center;
+}
+
+
+#projects {
+	display: block;
+}
+
+.pmargin {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 5px;
+	margin-left: 10px;
+}
+
 
 
 #about{
+	padding-top: 40px;
 	width: 100%;
 	float: left;
 	display: none;
 	border-bottom: 1px solid silver;
-
-
+	padding-bottom: 60px;
 }
 
 #travel{
-	margin-top: 20px;
+	padding-top: 40px;
 	width: 100%;
 	float: left;
 	display: none;
 	border-bottom: 1px solid silver;
-
+	padding-bottom: 60px;
 
 }
 
@@ -127,11 +176,12 @@ h2, h3 {
 
 
 #projects{
+	padding-top: 40px;
 	width: 100%;
 	float: left;
 	display: none;
 	border-bottom: 1px solid silver;
-
+	padding-bottom: 60px;
 }
 
 #recap{
@@ -139,12 +189,7 @@ h2, h3 {
 	float: left;
 	padding-top: 30px;
 	border-top: 1px solid silver;
-	
-
-
 }
-
-
 
 
 

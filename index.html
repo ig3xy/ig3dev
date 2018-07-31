@@ -1,60 +1,53 @@
 <!DOCTYPE HTML>
 <html lang="pl">
 <head>
-	<meta charset="utf-8"/>
 
-	<title> New junior dev </title>
+<title> New junior dev </title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="young passionate to testing and webmastering"/>
-	<meta name="keywords" content="web, dev, tester, qa, junior"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="description" content="young passionate to testing and webmastering"/>
+  <meta name="keywords" content="web, dev, tester, qa, junior"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-	<link rel="stylesheet" href="style.css" type="text/css"/>
-
-	<script src="js/three.min.js"></script>
-	<script src="js/stats.min.js"></script>
-
-
-	<script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
-
-	<script>
-		CookieAlert.init({
-			style: 'dark',
-			position: 'bottom',
-			opacity: '0.8',
-			displayTime: 0,
-			cookiePolicy: 'http://cookiealert.sruu.pl/o-ciasteczkach',
-			text: 'Ta strona wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
-		});
-	</script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-	
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Tinos|Josefin+Sans:300" rel="stylesheet">
+
+  <script src="script.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/stats.min.js"></script>
 
 
-<!--  !!!!!!!!!!!!!!!!!!!!!!!   DO AKTUALIZACJI: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<!-- Latest compiled and minified BOOTSTRAP CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- Latest compiled BOOTSTRAP JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
 
-<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Tinos" rel="stylesheet">
-
-
+  <script>
+    CookieAlert.init({
+      style: 'dark',
+      position: 'bottom',
+      opacity: '0.8',
+      displayTime: 0,
+      cookiePolicy: 'http://cookiealert.sruu.pl/o-ciasteczkach',
+      text: 'Ta strona wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
+    });
+  </script>
 
 </head>
 <body>
-<script src="script.js"></script>
 
 
 
-		<div class="main col-sm-12">
+<div class="container-fluid">
+<div class="row">
+
+	<div class="main col-sm-12">
+
 		<div id="auth" class="col-sm-4">
 			<img src="img/t-bitmoji.png" 
 				style="
@@ -62,87 +55,101 @@
 				height: 48%;
 				border: 1px solid silver;"> 
 		</div>
-		<div id="opis" class="col-sm-8">
-		<article id="atxt">
-		<p>
-		<span style="font-size: 1.6vw; font-family: normal;"> 'Hello World' on my website! </span>
-		 <br>
-		<span style="color: #A8004F; font-size: 2.3vw; padding-left: 20px; "> ,,I want to put a ding in the universe". </span>
-		 <br> 
-		<span style="color: #00A859; font-size: 2.3vw; padding-left: 30px; "> ,,We're just enthusiastic about what we do". </span>
-		 <br> 
-		<span style="font-size: 1.5vw; float: right; padding-right: 200px;"> ~Steve Jobs </span>
-		</p>
-		</article>
-		<!-- <p id="btxt"> .. w tym okienku będzie aktualna data. Obok okienka będzie przełącznik na "tryb nocny" zmiana css w jquerry.
-		Będą także znaczki do zmiany języka strony: ENG / RUS / FR </p>
-		-->
+		<div id="opis" class="col-sm-6">
+			<article id="atxt">
+			<p>
+			<span style="font-size: 1.6vw; font-family: normal;"> 'Hello World' on my website! </span>
+			 <br>
+			<span style="color: #A8004F; font-size: 2.3vw; padding-left: 20px; "> ,,I want to put a ding in the universe". </span>
+			 <br> 
+			<span style="color: #00A859; font-size: 2.3vw; padding-left: 30px; "> ,,We're just enthusiastic about what we do". </span>
+			 <br> 
+			<span style="font-size: 1.5vw; float: right; padding-right: 160px;"> ~Steve Jobs </span>
+			</p>
+			</article>
+			<!-- <p id="btxt"> .. w tym okienku będzie aktualna data. Obok okienka będzie przełącznik na "tryb nocny" zmiana css w jquerry.
+			Będą także znaczki do zmiany języka strony: ENG / RUS / FR </p>
+			-->
 		</div>
 
 	</div>
 
 	<!-- navbar do zmiany -->
-	<div id="navb">
-		<nav class="navbar navbar-inverse">
-			<ul class="nav navbar-nav">
+	<div id="navb" class="sticky">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+	          		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>                    
+	         		</button>
+	          		<a class="navbar-brand" href="http://www.ig3dev.pl"> ig3dev.pl </a>
+        		</div>
 
-			 	<p class="navbar-text"><a href="http://www.ig3dev.pl" style="text-decoration: none;">
-			 	<span class="glyphicon glyphicon-home"></span> &nbsp
-			 	<strong> ig3dev.pl </strong></a></p>
 
-	    		<li id="omnie"><a href="#"> 
-	    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp O mnie </a></li>
 
-	    		<li id="podroze"><a href="#"> 
-	    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp Podróże </a></li>
-	    		
-	    		<li id="projekty"><a href="#">
-	    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp  Projekty </a></li>
-	    		
-	    		<li> × </li>
-	    		<li> × </li>
-	    		<li> × </li>
+        		<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
 
-	    		<li id="fr"><a href="http://www.fr-avec.pl" target="_blank"> fr-avec.pl </a></li>
+				 	<!-- <p class="navbar-text"><a href="http://www.ig3dev.pl" style="text-decoration: none;">
+				 	
+				 	<span class="glyphicon glyphicon-home"></span> &nbsp
+				 	<strong> ig3dev.pl </strong></a></p> -->
 
-	    <!-- 	<li><a href="http://www.ilovebb.pl/" target="_blank"> ilovebb.pl </a></li>
-	    -->		
-	    		<p class="navbar-text"> &nbsp &nbsp I'm from: &nbsp <a href="http://www.zory.pl/" target="_blank"> <img src="img/zory.png" width="22" height="22">  </a> &nbsp </p>
+		    		<li id="omnie"><a href="#about"> 
+		    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp O mnie </a></li>
 
-	  		</ul>
+		    		<li id="podroze"><a href="#travel"> 
+		    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp Podróże </a></li>
+		    		
+		    		<li id="projekty"><a href="#projects">
+		    		<span class="glyphicon glyphicon-menu-right"></span> &nbsp  Projekty </a></li>
+
+		  		</ul>
+			  	<ul class="nav navbar-nav navbar-right">
+
+		    		<!-- <li> × </li> -->
+		    		<!-- <li><a href="http://www.ilovebb.pl/" target="_blank"> ilovebb.pl </a></li>   -->
+			  		<li id="fr"><a href="http://www.fr-avec.pl" target="_blank"> fr-avec.pl </a></li>
+			  		<li id="bt"><a href="http://www.bielsko-trip.eu" target="_blank"> bielsko-trip.eu </a></li>
+			      	<p class="navbar-text" style="color: #45ED6C;"> &nbsp &nbsp I'm from: &nbsp 
+			      	<a href="http://www.zory.pl/" target="_blank"> 
+			      		<img src="img/zory.png" width="22" height="22">  
+			      	</a> &nbsp </p> &nbsp 
+			    </ul>
+			    </div>
+		    </div>
 		</nav>
 	</div>
-	
 
 
 	<div id="about">
 	<div class="row">
+
 		<div class="col-sm-2">
 			<img src="img/saturn.jpg" style="width: 100%; height: 100%; margin: 20px; border-radius: 6px;">
 		</div>
 
-
 		<div class="col-sm-9">
-			
-			<article style="padding: 20px;">
+			<article style="padding: 10px;">
 			<h4>  Nazywam się... </h4>
-			<p style="font-size: 15px;"> Jestem początkującym webmasterem, zapalonym na punkcie IoT oraz domowej robotyki z Raspberry Pi.
+			<p style="font-size: 15px;"> 
+				&nbsp Jestem początkującym testerem, webmasterem, zapalonym na punkcie IoT oraz domowej robotyki z Raspberry Pi.
 				<br> Uczę się programowania w skryptowym Pythonie, praktykując na 
-					<a href="https://projects.raspberrypi.org/en/" target="_blank">malinkach</a>
-					i podczas pisania skryptów automatyzujących testowanie aplikacji webowych we frameworku Selenium Webdriver.
-				<br> Wraz z pracą na RPi wgłębiam się w platformę node.js, działającej na bazie silnika obsługującego JavaScript,
-				 V8 (autorstwa Google).
+				<a href="https://projects.raspberrypi.org/en/" target="_blank">malinkach</a>
+				i podczas pisania skryptów automatyzujących testowanie aplikacji webowych we frameworku Selenium Webdriver, dążąc do testerskiej profesji.
+				<br> Wraz z pracą na RPi wgłębiam się w platformę node.js, działającej na bazie silnika obsługującego JavaScript, V8 (autorstwa Google).
 				<br> 
-				<br> Front-end, webmastering jest moim drugim zajęciem, bez korzystania z gotowych CMS'ów, tylko własne rzemiosło.
+				<br> &nbsp Front-end, webmastering jest moim drugim zajęciem. Bez konieczności użycia gotowych CMS'ów tworzę freelancersko strony internetowe w oparciu o HTML5, CSS3, JS (JQuerry) i Bootstrap. 
 				<br> Pierwsze strony tworzyłem kończąc 12 lat, gdy wpadła mi w ręce książka z HTML. 
-				Nie mając jeszcze wtedy dostępu do internetu ani pojęcia o CSS i JS pisałem klasyczne z HTML 3.0, strony w Notatniku 😆.
-				<br> Obecnie moimi ulubionymi IDE są PyCharm i Sublime Text 3. Korzystam także z Atom.io, gdy w realizacji jest więcej projektów.
-				<br> Jestem otwarty na wszelkie propozycje testerskie, developerskie i związane z tym oferty pracy. Testowanie oprogramowania jak uważam jest ścieżką w karierze IT dla mnie najbardziej przystępną. Możliwa relokacja na terenie kraju nie jest dla mnie przeszkodą, lubię się przemieszczać z miejsca na miejsce.
-				<br>
-				Jako student WSEH w Bielsku-Białej uczę się zarządzać projektami. Logistyczne podejście, sprawna komunikacja i pozytywne nastawienie jest niemniej ważne dla przemysłu IT jak najnowsze technologie.
+				Nie mając jeszcze wtedy dostępu do internetu ani pojęcia o CSS i JS pisałem klasyczne z HTML 3.0, strony w Notatniku 😆. Obecnie moimi ulubionymi IDE są PyCharm i Sublime Text 3 do szybkiej koderskiej edycji. 
+				<br> &nbsp Jestem otwarty na wszelkie propozycje testerskie, developerskie i związane z tym oferty pracy. Testowanie oprogramowania jak uważam jest ścieżką w karierze IT dla mnie najbardziej przystępną.
+
+				<br> &nbsp Możliwa relokacja na terenie kraju nie jest dla mnie przeszkodą, wszakże przemieszczanie się jest moją domeną. Jako student WSEH w Bielsku-Białej uczę się zarządzać projektami. Logistycznym podejściem, sprawną komunikacją i pozytywnym nastawieniem jest możliwa do osiągnięcia cała przestrzeń wszechrzeczy.
+				
 			</p>
 			</article>
-
 		</div>
 
 		<div class="col-sm-1">
@@ -159,12 +166,11 @@
 	</div>
 	</div>
 
-
 	<div id="travel">
 	<div class="row">
 		<div class="col-sm-6">
 		<article style="text-align: center;">
-			<h3><i> Pierwsza kosmiczna podróż </i></h3>
+			<h3> Pierwsza kosmiczna podróż </h3>
 				<p style="font-size: 16px;"> Sekcja w budowie.</p>
 				<br>
 
@@ -174,9 +180,8 @@
 						width: 40%;
 						opacity:0.9;">
 
-				<br><br><br>
-				<p> Na kosmiczną podróż, zostawiam więc kosmiczny teledysk &nbsp 
-					<span class="glyphicon glyphicon-hand-right"></span> </p>
+				<br><br>
+				<p> <span class="glyphicon glyphicon-hand-right"></span> </p>
 			
 			<h3 style="display:none;"> Portugalia </h3>
 				<p> </p>
@@ -204,68 +209,81 @@
 		</article>
 		</div>
 		<div class="col-sm-6">
-		<p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/Yce0wDdu2go?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</p>
+			<article style="text-align: center;">
+				<p> 
+				<img src="img/aa1.jpg" style="height: 60%; width: 60%;">
+				</p>
+			</article>
 		</div>
 
 	</div>
 	</div>
 
-
 	<div id="projects">
-	
 	<div class="row">
 		<div class="col-sm-12">
 		<h2> O projektach </h2>
 		</div>
-		
+
 		<div class="col-sm-3">
-			 <h3> <a href="http://wwww.fr-avec.pl" style="text-decoration: none;" target="_blank"> fr-avec.pl </a> </h3> 
-			<img src="img/stamp.jpg" style="height:200px; width: 150px; display: block; margin-left: auto; margin-right: auto;">
-				<p class="pmargin"> Baza słówek francuskich, zaczerpniętych z artykułów francuskich gazet i tekstów piosenek. Prosty sposób nauki języka obcego poprzez tłumaczenie i dodanie nowych słówek na stronę. Nauka wielowymiarowa.
+			<h3> ART galeria </h3>
+			<img src="img/art-fs.jpg" style="height:200px; width: 200px; display: block; margin-left: auto; margin-right: auto;">
+				<p class="pmargin">
+				<strong> Pinakoteka sztuki | kolektyw </strong>
+				<br>
+				Wirtualna galeria rysunku,
+				<br>
+				akwareli + fotografii HDR [&nbsp <span class="glyphicon glyphicon-camera"></span> - LG V30]. Naszego kolektywu. Witryna powstała z wykorzystaniem biblioteki pixi.js /w budowie
 				</p>
 		</div>
 
+		
 		<div class="col-sm-3">
-		<h3> Galeria fotografii </h3>
-		<img src="img/axiss.png" style="height:200px; width: 200px; display: block; margin-left: auto; margin-right: auto;">
-			<p class="pmargin"> Galeria fotografii. /w budowie
-			</p>
+			<h3> <a href="http://wwww.fr-avec.pl" style="text-decoration: none;" target="_blank"> fr-avec.pl </a> </h3>
+			<img src="img/stamp.jpg" style="height:200px; width: 150px; display: block; margin-left: auto; margin-right: auto;">
+				<p class="pmargin">
+				<strong> Liberté-Égalité-Fraternité | pl-fr </strong>
+				<br>
+				 Zestaw słówek francuskich, zaczerpniętych z tłumaczenia artykułów francuskich gazet i tekstów piosenek. Zawarte na dedykowanej stronie jako hybrydowa metoda nauki języka.
+				</p>
 		</div>
+
+		
 
 		<div class="col-sm-3">
 			<h3> bielsko-trip.eu </h3>
 			<img src="img/BB_logo.jpg" style="height:200px; width: 260px; display: block; margin-left: auto; margin-right: auto;">
-				<p class="pmargin"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget interdum urna. Duis convallis orci dolor, sed convallis elit euismod ac. Vestibulum maximus urna ut felis vestibulum, porta rutrum nunc facilisis. Suspendisse ornare elementum risus, ac facilisis libero faucibus ut.
+				<p class="pmargin"> 
+				<strong> Bielsko-Biała  | na trip </strong> 
+				<br>
+				Beskidy warte wyprawy. Przedstawia się miejsca zasłużone, których pasjonat podróży nie rozpatrzy żalem. Od rowerowych tras przez dzikość natury, po uroki wiedeńskiej architektury.
 				</p>
 		</div>
 
 		<div class="col-sm-3">
 			<h3> pac-man </h3>
 			<img src="img/pacman.png" style="height: 100px; width: 200px; margin-top: 50px; margin-bottom: 80px; display: block; margin-left: auto; margin-right: auto;">
-				<p class="pmargin"> Projekt, którego stopniowo wykonuję.
-				Jest to tutorial z książki Jeffreya Bilesa.
-				Narazie to tylko commity i modyfikacje. Wypuszczę pac-mana z klatki, gdy osiągnie godny pułap rozwoju.
+				<p class="pmargin"> 
+				<strong> Pac-Man | tutorial </strong>
+				<br>
+				Projekt stopniowo wykonywany - tutorial z książki Jeffreya Bilesa.
+				W fazie commitów i modyfikacji. Pac-man wypuszczony zostanie z klatki, gdy osiągnie godny pułap rozwoju.
 				</p>
 		</div>
 	</div>
 	</div>
 
-
-
-
-
 	<div id="recap">
 	<div class="row">
 		<div class="box col-sm-5" id="left-box">
-
-		
+			<br>
+			<!-- 
 			<h4> Strony partnerskie </h4>
 			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
 			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
 			<p> <span class="glyphicon glyphicon-plus"></span> something </p>
 			<br>
+			--> <img src="img/spaceship.jpg" style="height: 150px; width: 150px;"> <br>
 			<h4> Kontakt </h4>
 			<p> <span class="glyphicon glyphicon-envelope"></span> &nbsp ig3dev@linux.pl</p>
      	
@@ -298,12 +316,15 @@
 
 		<div class="box col-sm-5" id="right-box">
 						
-				<img src="img/snapx.jpg" style="height: 200px; width: 200px; border: 3px solid #6E6E6E; margin-top: 30px;">
+				<img src="img/snapx.jpg" style="height: 200px; width: 200px; border: 3px solid #6E6E6E; margin-top: 20px;">
 			
 		</div>
 	</div>
 	</div>
-<!-- height:200px; width: 250px; margin-top: 5px -->
+
+</div>
+</div>
+
 
 	<!-- 
 		<script src="js/webgl_geometry_hierarchy.js"></script> 

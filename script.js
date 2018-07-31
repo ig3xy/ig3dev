@@ -3,7 +3,7 @@
 $(function() {
 
 	$("#omnie").on('click', function(){
-		$("#about").toggle(400);
+		$("#about").show(400);
 	});
 });
 
@@ -11,14 +11,14 @@ $(function() {
 $(function() {
 
 	$("#podroze").on('click', function(){
-		$("#travel").toggle(400);
+		$("#travel").show(400);
 	});
 });
 
 $(function() {
 
 	$("#projekty").on('click', function(){
-		$("#projects").toggle(400);
+		$("#projects").show(400);
 	});
 });
 
